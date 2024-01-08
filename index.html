@@ -9,22 +9,22 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <a href="#" class="navbar-brand text-white fs-2">X-Shop</a>
-            <button class="navbar-toggler border-0 shadow-none" data-bs-toggle="collapse" data-bs-target="#collapse" id="btnnav"><i class="fa-solid fa-bars text-white fs-3"></i></button>
+            <a href="#" class="navbar-brand fs-2 fw-bold">X-Shop</a>
+            <button class="navbar-toggler border-0 shadow-none" data-bs-toggle="collapse" data-bs-target="#collapse" id="btnnav"><i class="fa-solid fa-bars fs-3"></i></button>
             <div class="collapse navbar-collapse" id="collapse">
                 <ul class="navbar-nav ms-auto text-center p-2" id="firul">
-                    <li class="nav-item"><a href="./pages/sign.html" class="nav-link text-white fs-5 mx-4 my-5 my-lg-0">Sign In <i class="fa-solid fa-right-to-bracket"></i></a></li>
-                    <li class="nav-item"><a href="./pages/reg.html" class="nav-link text-white fs-5 mx-4 my-5 my-lg-0">Register <i class="fa-solid fa-user-plus"></i></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link fs-5 mx-4 my-5 my-lg-0 fw-bold" id="signlocal">Sign In <i class="fa-solid fa-right-to-bracket"></i></a></li>
+                    <li class="nav-item"><a href="./pages/reg.html" class="nav-link fs-5 mx-4 my-5 my-lg-0 fw-bold">Register <i class="fa-solid fa-user-plus"></i></a></li>
                 </ul>
                 <ul class="navbar-nav ms-auto text-center p-2" id="secul">
-                    <li class="nav-item dropdown d-inline-block" id="userhere"><a href="#" class="nav-link text-white mx-4 my-5 my-lg-0 dropdown-toggle fs-4" data-bs-toggle="dropdown"></a>
+                    <li class="nav-item dropdown d-inline-block" id="userhere"><a href="#" class="nav-link mx-4 my-5 my-lg-0 dropdown-toggle fs-3 fw-bold" data-bs-toggle="dropdown"></a>
                         <ul class="dropdown-menu">
                             <li><a href="#" class="dropdown-item fs-5 fw-semibold" id="out">Sign out</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item d-inline-block"><a href="./pages/pro.html" class="nav-link text-white mx-4 my-5 my-lg-0"  id="carticon"><i class="fa-solid fa-cart-shopping fs-2"></i><span id="numon"></span></a></li>
+                    <li class="nav-item d-inline-block"><a href="./pages/pro.html" class="nav-link mx-4 my-5 my-lg-0"  id="carticon"><i class="fa-solid fa-cart-shopping fs-2"></i><span id="numon"></span></a></li>
                     
                 </ul>
                 
@@ -33,18 +33,35 @@
     </nav>
 
 
-    <main class="bg-main w-100">
-        <div class="container w-100">
-            <div class="row" id="productcontent">
-                
+    <main class="w-100">
+        <div class="container-sp">
+            <div class="row w-100">
+                <div class="col-3 border-end border-2 byebyee">
+    
+                    <h1 class="text-dark ms-3 border-bottom border-2 pb-2">Search By Name:</h1>
+                    <input type="text" class="form-control my-3 w-75 my-4 m-auto shadow-none fs-5 text-dark addme" placeholder="What you want" id="searchinput">
+    
+                    <h1 class="text-dark ms-3 border-bottom border-2 pb-2">Buy Now:</h1>
+                    <div class="allprodd">
+                        <div><a href="#" class="text-center nav-link text-dark ms-5 fs-4 my-5 py-2 rounded-pill activeselect" id="allshow">All</a></div>
+                        <div><a href="#" class="text-center nav-link text-dark ms-5 fs-4 my-5 py-2 rounded-pill">Watch</a></div>
+                        <div><a href="#" class="text-center nav-link text-dark ms-5 fs-4 my-5 py-2 rounded-pill">Car</a></div>
+                        <div><a href="#" class="text-center nav-link text-dark ms-5 fs-4 my-5 py-2 rounded-pill">Phone</a></div>
+                        <div><a href="#" class="text-center nav-link text-dark ms-5 fs-4 my-5 py-2 rounded-pill">Lap Top</a></div>
+                    </div>
+                    
+                </div>
+    
+    
+                <div class="col-9 row" id="productcontent">
+    
+                </div>
             </div>
         </div>
     </main>
+    
 
-
-
-
-
+<!-- 1184 معانا -->
 
 <script src="./js/bootstrap.bundle.min.js"></script>
 <script src="./js/main.js"></script>

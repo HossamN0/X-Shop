@@ -1,24 +1,6 @@
-.bg-main {
-    position: relative;
-    background-image: url(../img/bg-main.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    z-index: 1;
-    min-height: 100vh;
+body {
+    background-color: rgba(218, 218, 255, 0.491);
   }
-  
-  .bg-main::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.54);
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-  }
-  
   #flexmar {
     padding-top: 15rem;
   }
@@ -43,10 +25,6 @@
     padding-top: 150px;
   }
   
-  .card img {
-    min-width: 300px;
-    margin: auto;
-  }
   
   #carticon {
     position: relative;
@@ -54,8 +32,8 @@
   
   #numon {
     position: absolute;
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     background-color: red;
     display: block;
     text-align: center;
@@ -64,8 +42,26 @@
     right: -9px;
     font-size: 1rem;
     font-weight: bold;
+    padding-top: 3px;
+    color: white;
+    font-size: 16px;
   }
-  
+  form input[type=text],
+  form input[type=password],
+  form input[type=email],
+  .addme{
+    border: none ;
+    background-color: rgba(168, 168, 168, 0.42);
+  }
+  form input[type=text]:focus,
+  form input[type=password]:focus,
+  form input[type=email]:focus,
+  .addme:focus {
+    background-color: rgba(168, 168, 168, 0.42) !important;
+  }
+  a.btn-dark{
+    background-color: #03045e !important;
+  }
   input[type=submit]:active {
     background-color: rgb(49, 49, 49) !important;
   }
@@ -77,8 +73,127 @@
   .vh-100sp {
     height: calc(100vh - 300px);
   }
+  .h-90 {
+    height: 85%;
+  }
   
+  .w-90 {
+    width: 85%;
+  }
+  .hover-icon {
+    border: 2px solid #2125296a !important;
+  }
+  .bg-bblue{
+    background-color: #03045e;
+    color: white;
+  }
+  .btn-sp{
+    background-color: transparent;
+    padding: 5px 15px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 2px solid white;
+    color: white;
+  }
+  .btn-sp:hover,
+  a.btn-dark:hover {
+    background-color: #2a2c8d !important;
+  }
+  .rounded-sp {
+    border-radius: 10px 200px 200px 10px !important;
+  }
+  .t-0 {
+    transform: translatex(0%) translatey(-50%) !important;
+  }
+  .t-auto{
+    transform: translateX(calc(100%)) translatey(-50%) !important;
+  }
+  #errorhere {
+    width: fit-content;
+    margin: auto;
+  }
+  nav {
+    background-color: rgba(218, 218, 255, 0.491);
+    backdrop-filter: blur(10px);
+    color: black !important;
+    border-bottom: 2px solid black;
+  }
+  nav a {
+    color: black !important;
+  }
+  .margin-sp {
+    margin-top: 150px;
+  }
+  .activee {
+    background-color: #5657ca;
+    color: white !important;
+  }
+  .mobile-only{
+    display: none;
+  }
+  .card-shadow {
+    box-shadow: -2px 2px 20px 0px #0000008c;
+  }
+  .activeselect{
+    background-color: #03045e;
+    color: white !important;
+  }
+  .card{
+    min-width: 250px;
+  }
+  #productcontent{
+    margin: 0 auto !important;
+  }
+  .card img{
+    width: 100% !important;
+    height: auto !important;
+  }
+  .card img.img-fluid{
+    width: auto !important;
+    height: 100% !important;
+  }
+  
+  .container-sp { 
+    padding: 0 0 0 10px;
+    max-width: 100% !important;
+  }
+  #ainpro{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    
+  }
+  #onremove{
+    position: absolute;
+    bottom: 70px;
+    right: 35px;
+    border: 3px solid black;
+    padding: 5px 3px;
+    text-align: center;
+    border-radius: 10px;
+  }
+  #onremove i {
+    cursor: pointer;
+  }
+
+
+
   @media (max-width: 991px) {
+
+    .w-50 {
+      width: 86% !important;
+      padding: 20px;
+    }
+    .w-50 .container {
+      padding: 0;
+      margin: 0;
+    }
+    .w-50 input {
+      width: 100% !important;
+      margin: 0;
+    }
+
     #userhere {
       display: block !important;
     }
@@ -88,9 +203,11 @@
       height: calc(100vh - 64px);
       right: 0;
       top: 0;
-      background-color: #212529;
+      background-color: rgb(218, 218, 255);
+      backdrop-filter: blur(10px) ;
+      color: black;
+      border-bottom: 2px solid black;
       top: 64px;
-      color: white;
       overflow-y: scroll;
       transition: 0.5s;
       visibility: visible;
@@ -103,4 +220,49 @@
       -webkit-clip-path: circle(0.4% at 100% 0);
       clip-path: circle(0.4% at 100% 0);
     }
+    .byebyee {
+      display: none;
+    }
+    #createform {
+      position: absolute;
+      background: white;
+    }
+    #createform,
+    #signinform{
+      margin: auto;
+    }
+    #createform input, 
+    #signinform input {
+      width: 80% !important;
+      margin: 0;
+    }
+    #createform input[type=submit],
+    #signinform input[type=submit]{
+      width: 250px !important;
+      display: block;
+      padding: 10px 0;
+      margin-bottom: 20px !important;
+      margin-top: 60px !important;
+    }
+
+    .mobile-only{
+      display: block !important;
+    }
+    .card img.img-fluid{
+
+      width: 100% !important;
+      height: auto !important;
+      border-radius: 10px;
+    }
+    .cardmg {
+      margin: 10px 10px !important;
+    }
+    .cardpos{
+      position: static !important;
+      margin: 10px auto !important;
+      text-align: center !important;
+      width: 50% ;
+    }
+    
+    
   }

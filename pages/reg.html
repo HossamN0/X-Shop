@@ -9,35 +9,54 @@
     <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-dark fixed-top ">
-        <div class="container">
-            <a href="../index.html" class="navbar-brand text-white fs-2">X-Shop</a>
-            <button class="navbar-toggler border-0 shadow-none" data-bs-toggle="collapse" data-bs-target="#collapse" id="btnnav"><i class="fa-solid fa-bars text-white"></i></button>
-            <div class="collapse navbar-collapse" id="collapse">
-                <ul class="navbar-nav ms-auto text-center p-2">
-                    <li class="nav-item"><a href="./sign.html" class="nav-link text-white fs-5 mx-4 my-5 my-lg-0">Sign In <i class="fa-solid fa-right-to-bracket"></i></a></li>
-                    <li class="nav-item"><a href="#" class="nav-link text-white fs-5 mx-4 my-5 my-lg-0">Register <i class="fa-solid fa-user-plus"></i></a></li>
-                </ul>
+
+
+    <section class="vh-100 w-100">
+            <div class="container h-100 position-relative">
+                <div class="row bg-white h-90 position-absolute top-50 translate-middle-y w-100 rounded-3">
+                    
+                        <form class="col-12 col-lg-6 py-5" id="signinform">
+                            <h1 class="text-center mt-5 fw-bold">Sign In</h1>
+                            <div class="d-flex justify-content-between w-50 m-auto">
+                                <a href="#" class="text-dark fs-2 border border-3 hover-icon border-dark rounded-2 px-2"><i class="fa-brands fa-google-plus-g"></i></a><a href="#" class="text-dark fs-2 border border-3 hover-icon border-dark rounded-2 px-2"><i class="fa-brands fa-facebook"></i></a><a href="#" class="text-dark fs-2 border border-3 hover-icon border-dark rounded-2 px-2"><i class="fa-brands fa-github"></i></a><a href="#" class="text-dark fs-2 border border-3 hover-icon border-dark rounded-2 px-2"><i class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                            <input type="email" placeholder="Enter Your Email" class="form-control my-3 w-75 my-5 m-auto shadow-none fs-5" id="emailsignin">
+                            <input type="password" placeholder="Enter Your password" class="form-control my-3 w-75 my-5 m-auto shadow-none fs-5" id="passwordsignin">
+                            <input type="submit" value="Sign In" class="form-control my-3 w-50 my-5 m-auto shadow-none text-white border-0 fs-4 bg-dark" id="submmitsignin">
+                            <p class="text-center fs-5 mobile-only">if u have not account you can <a href="#" id="showreg">Register</a></p>
+                            <div class="text-white fs-3 bg-danger p-1 px-4 text-center rounded-1" id="errorhere"></div>
+                            
+                        </form>
+
+                        <form class="col-12 col-lg-6 py-5 rounded-2" id="createform">
+                            <h1 class="text-center mt-5 fw-bold">Create An Account</h1>
+                            <div class="d-flex justify-content-between w-50 m-auto">
+                                <a href="#" class="text-dark fs-2 border border-3 hover-icon border-dark rounded-2 px-2"><i class="fa-brands fa-google-plus-g"></i></a><a href="#" class="text-dark fs-2 border border-3 hover-icon border-dark rounded-2 px-2"><i class="fa-brands fa-facebook"></i></a><a href="#" class="text-dark fs-2 border border-3 hover-icon border-dark rounded-2 px-2"><i class="fa-brands fa-github"></i></a><a href="#" class="text-dark fs-2 border border-3 hover-icon border-dark rounded-2 px-2"><i class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                            <input type="text" placeholder="Enter Your User Name" class="form-control my-3 w-75 my-4 m-auto shadow-none fs-5 text-dark" id="user">
+                            <input type="email" placeholder="Enter Your Email" class="form-control my-3 w-75 my-4 m-auto shadow-none fs-5 text-dark" id="email">
+                            <input type="password" placeholder="Enter Your password" class="form-control my-3 w-75 my-4 m-auto shadow-none fs-5 text-dark" id="password">
+                            <input type="submit" value="Register" class="form-control my-3 w-50 my-4 m-auto shadow-none text-white border-0 fs-4 bg-dark" id="submitbtn">
+                            <p class="text-center fs-5 mobile-only">if u have account you can <a href="#" id="showsign">Sign In</a></p>
+                        </form>
+
+                </div>
+                <div class="position-absolute top-50 t-0 w-50 start-0 h-90 byebyee" id="div-swap">
+                    <div class="h-100 w-100">
+                        <div class="bg-bblue text-center h-100 w-100 rounded-3 rounded-sp start" id="roundedd">
+                            <div class="d-flex justify-content-center align-items-center h-100 flex-column">
+                                <h1 class="fs-1 fw-bold py-2">Welcome, to our shop</h1>
+                                <p class="fs-3 py-2 px-3" id="contentreg">if u have account you can</p>
+                                <button class="btn-sp my-3" id="sign-in-swap">Sign In</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 
             </div>
-        </div>
 
-    </nav>
-
-
-    <main class="bg-main vh-100 w-100">
-        <div class="position-absolute top-50 start-50 translate-middle shape w-50">
-            <div class="container">
-                <form>
-                <input type="text" placeholder="Enter Your User Name" class="form-control my-3 w-100 m-auto shadow-none border-3 border-dark fs-5 text-dark" id="user">
-                <input type="email" placeholder="Enter Your Email" class="form-control my-3 w-100 m-auto shadow-none border-3 border-dark fs-5 text-dark" id="email">
-                <input type="password" placeholder="Enter Your password" class="form-control my-3 w-100 m-auto shadow-none border-3 border-dark fs-5 text-dark" id="password">
-                <input type="submit" value="Register" class="form-control my-3 w-100 m-auto shadow-none text-white border-0 fs-4 bg-dark" id="submitbtn">
-                <div class="text-dark bg-white rounded-2 px-4 py-2 fs-5 fw-semibold">If You Have Account You Can <a href="./sign.html">Log In</a></div>
-                </form>
-            </div>
-        </div>
-    </main>
+    </section>
 
 
 
